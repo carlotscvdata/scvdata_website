@@ -1,0 +1,171 @@
+/**
+ * Site header
+ */
+
+nav {
+  background-color: white !important;
+  
+  ul a {
+  color: black !important;
+  font-size: 0.8em;
+  }
+  
+  .material-icons {
+    color: black !important;
+  }
+  
+  .brand-logo {
+    img {
+      height: 60px;
+    }
+  }
+}
+
+/**
+ * Footer
+ */
+
+.footer-logo {
+  img {
+    height: 50px;
+  }
+  margin-bottom: 1em;
+}
+
+.page-footer {
+  .material-icons, .icon-text {
+    vertical-align: middle;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+}
+
+/**
+ * Layout
+ */ 
+
+body {
+  font-family: $text-font;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  h1, h2, h3, h4, h5{
+    font-family: $heading-font;
+    font-weight: 590;
+  }
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+hr {
+  background-color: $main !important;
+  color: $main !important;
+  border: solid 1px $main !important;
+  height: 1px !important;
+  width: 15% !important;
+}
+
+section {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+
+.btn {
+  background: $main !important;
+}
+
+.btn:hover {
+  background-color: #d8884e !important;
+}
+
+input:focus {
+  border-bottom: 1px solid $main !important;
+  box-shadow: 0 1px 0 0 $main !important;
+}
+
+.input-field input[type=text]:focus + label {
+  color: $main !important;
+}
+
+/**
+* Home Page
+*/
+
+/* Slider Section */
+
+.slider {
+  height: 780px !important;
+  
+  h1 {
+    font-size: 3.7em;
+  }
+
+  .slides {
+    height: 730px !important;
+  }
+
+  .btn {
+    margin-top: 1.2em;
+  }
+
+  .indicator-item.active {
+      background-color: $main !important;
+  }
+}
+
+/* Parallax Section */
+
+.parallax-container {
+  height: 250px;
+  color: white !important;
+
+  i {
+    color: $main;
+  }
+}
+
+.parallax {
+  position: absolute;
+  z-index: -1;
+}
+
+/* Contact Us */
+
+.contact-form {
+  padding: 2.5em;
+
+  .card-action {
+    a {
+      color: $main !important;
+    }
+  }
+
+  .card {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+}
+
+/**
+* Media Responsive
+*/
+
+@media (max-width: 600px) {
+  .nav-wrapper .brand-logo img {
+    height: 54px;
+  }
+  .footer-logo img {
+    height: 45px;
+  }
+}
+
