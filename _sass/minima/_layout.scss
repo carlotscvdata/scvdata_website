@@ -1,22 +1,25 @@
+/** Mobile first styles go here 
+* Mobile Devices <= 600 px 
+* iPhone X, Google Pixel 2XL, iPhone 7
+*/
+
+
 /**
  * Site header
  */
-
 nav {
   background-color: white !important;
   
   ul a {
-  color: black !important;
-  font-size: 0.8em;
-  }
-  
-  .material-icons {
-    color: black !important;
+  color: black;
+  font-size: 0.85em;
+  font-weight: 590;
+  letter-spacing: 0.1em;
   }
   
   .brand-logo {
     img {
-      height: 60px;
+      height: 48px;
     }
   }
 }
@@ -27,7 +30,7 @@ nav {
 
 .footer-logo {
   img {
-    height: 50px;
+    height: 45px;
   }
   margin-bottom: 1em;
 }
@@ -39,17 +42,27 @@ nav {
   p {
     padding: 0;
     margin: 0;
+    font-size: 1em;
   }
   ul {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
   }
+  li {
+    margin-bottom: 0.5em;
+  }
+  a {
+    font-size: 1.1em;
+  }
 }
 
 /**
  * Layout
  */ 
+main {
+  flex: 1 0 auto;
+}
 
 body {
   font-family: $text-font;
@@ -57,22 +70,22 @@ body {
   min-height: 100vh;
   flex-direction: column;
 
+  p {
+    font-size: 1.25em;
+  }
+
   h1, h2, h3, h4, h5{
     font-family: $heading-font;
     font-weight: 590;
   }
 }
 
-main {
-  flex: 1 0 auto;
-}
-
 hr {
-  background-color: $main !important;
-  color: $main !important;
-  border: solid 1px $main !important;
-  height: 1px !important;
-  width: 15% !important;
+  background-color: $main;
+  color: $main;
+  border: solid 1px $main;
+  height: 0.1rem;
+  width: 5rem;
 }
 
 section {
@@ -81,11 +94,11 @@ section {
 }
 
 .btn {
-  background: $main !important;
+  background: $main;
 }
 
 .btn:hover {
-  background-color: #d8884e !important;
+  background-color: #d8884e;
 }
 
 input:focus {
@@ -104,14 +117,14 @@ input:focus {
 /* Slider Section */
 
 .slider {
-  height: 780px !important;
+  height: 450px !important;
   
   h1 {
-    font-size: 3.7em;
+    font-size: 1.5em;
   }
 
   .slides {
-    height: 730px !important;
+    height: 350px !important;
   }
 
   .btn {
@@ -123,20 +136,46 @@ input:focus {
   }
 }
 
+/* Who We Help */
+
+.who-we-help {
+
+  .icon-card {
+    height: 180px !important;
+  }
+  p {
+    font-weight: 500;
+  }
+  .material-icons {
+    color: #bdbdbd;
+  }
+}
+
+
 /* Parallax Section */
 
 .parallax-container {
-  height: 250px;
+  height: 200px;
   color: white !important;
 
   i {
     color: $main;
+  }
+  h4 {
+    font-size: 1.75em;
   }
 }
 
 .parallax {
   position: absolute;
   z-index: -1;
+}
+
+/* Some of our Clients */
+
+.our-clients {
+  padding-top: 3.5em;
+
 }
 
 /* Contact Us */
@@ -157,15 +196,208 @@ input:focus {
 }
 
 /**
-* Media Responsive
+* Media Responsive Design
 */
 
-@media (max-width: 600px) {
-  .nav-wrapper .brand-logo img {
-    height: 54px;
+/** Tablet Devices styles go here 
+* Tablet Devices > 600 px 
+* iPad, iPad Pro
+*/
+
+@media screen and (min-width: 601px) {
+
+/**
+ * Site header
+ */
+   nav {
+    .brand-logo {
+      img {
+        height: 60px;
+      }
+    }
   }
-  .footer-logo img {
-    height: 45px;
+
+/**
+ * Layout
+ */ 
+
+ body {
+  font-family: $text-font;
+
+  p {
+    font-size: 1.2em;
+  }
+
+  h1, h2, h3, h4, h5{
+    font-family: $heading-font;
+    font-weight: 590;
+  }
+}  
+
+/**
+* Home Page
+*/
+
+/* Slider Section */
+
+  .slider {
+    height: 780px !important;
+  
+    h1 {
+      font-size: 3.7em;
+    }
+
+    .slides {
+      height: 730px !important;
+    }
+
+    .btn {
+      margin-top: 1.2em;
+    }
+
+    .indicator-item.active {
+        background-color: $main !important;
+    }
+  }
+
+/* What We Do */
+
+.what-we-do {
+  .card-panel {
+    height: 200px !important;
+  }
+}
+
+/* Who We Help */
+
+.who-we-help {
+  .icon-card {
+    height: 185px !important;
+  }
+  p {
+    font-weight: 500;
+  }
+}
+
+/* Parallax Section */
+
+  .parallax-container {
+    height: 250px;
+    color: white !important;
+
+    i {
+      color: $main;
+    }
+    h4 {
+      font-size: 2.25em;
+    }
+  }
+
+  .parallax {
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+/** Desktop Devices styles go here 
+* Desktop Devices > 992 px 
+*/
+
+@media screen and (min-width: 993px) {
+
+/**
+ * Layout
+ */ 
+
+body {
+  font-family: $text-font;
+
+  p {
+    font-size: 1.2em;
+  }
+
+  h1, h2, h3, h4, h5{
+    font-family: $heading-font;
+    font-weight: 590;
+  }
+}
+
+/**
+* Home Page
+*/
+
+/* What We Do */
+
+.what-we-do {
+  .card-panel {
+    height: 200px !important;
+  }
+}
+
+/* Who We Help */ 
+
+.who-we-help {
+  padding-top: 3em;
+
+  .icon-card {
+    height: 200px !important;
+  }
+  p {
+    font-weight: 500;
+    font-size: 1.2em;
+  }
+}
+
+}
+
+/** Large Desktop Devices styles go here 
+* Large Desktop Devices > 1200 px 
+*/
+
+@media screen and (min-width: 1201px) {
+
+  /**
+   * Layout
+   */ 
+  
+   body {
+    font-family: $text-font;
+  
+    p {
+      font-size: 1em;
+    }
+  
+    h1, h2, h3, h4, h5{
+      font-family: $heading-font;
+      font-weight: 590;
+    }
+  }
+  
+/**
+* Home Page
+*/
+
+/* What We Do */
+
+.what-we-do {
+  .card-panel {
+    height: 190px;
+  }
+}
+
+/* Who We Help */ 
+
+.who-we-help {
+  padding-top: 3em;
+  
+  .icon-card {
+    height: 210px !important;
+    }
+  
+  p {
+    font-weight: 500;
+    font-size: 1.2em;
+    } 
   }
 }
 
