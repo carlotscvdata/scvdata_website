@@ -21,16 +21,20 @@ nav {
     img {
       height: 48px;
     }
-  }
+  }  
 }
 
 .material-icons {
   color: black;
 }
 
+
 .side-nav {
-  z-index: 1;
-  top: 0;
+  .side-logo {
+    img {
+      height: 48px;
+    }  
+  }
 }
 
 /**
@@ -133,7 +137,7 @@ input:focus {
   }
 
   .slides {
-    height: 350px !important;
+    height: 400px !important;
   }
 
   .btn {

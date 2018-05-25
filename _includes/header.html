@@ -11,14 +11,16 @@
 			<li><a href="#">SUPPORT</a></li>
 			<li><a href="#">CONTACT</a></li>
 		</ul>
-		<ul class="side-nav" id="mobile-demo">
-			<li><a href="/">Home</a></li>
-			{% for page in site.pages %} {% if page.title %}
-			<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-			{% endif %} {% endfor %}
-		</ul>
 	</div>
 	</div>
 </nav>
 </div>
+	<ul class="side-nav" id="mobile-demo">
+		<a href="/" class="side-logo center-align"><img src="img/scvdata_logo.png"></a>
+		<li><a href="/">Home</a></li>
+		<li><a href="#">Services</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Support</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
 				
