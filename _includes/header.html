@@ -2,23 +2,25 @@
 <nav>
 	<div class="container">
 	<div class="nav-wrapper">
-		<a href="/" class="brand-logo"><img src="/img/scvdata_logo.png"></a>
+		<a href="/" class="brand-logo"><img src="img/scvdata_logo.png"></a>
 		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		<ul class="right hide-on-med-and-down">
-			<li><a href="/">HOME</a></li>
-			<li><a href="/services">SERVICES</a></li>
-			<li><a href="/about">ABOUT</a></li>
-			<li><a href="/support">SUPPORT</a></li>
-			<li><a href="/contact">CONTACT</a></li>
-		</ul>
-		<ul class="side-nav" id="mobile-demo">
-			<li><a href="/">Home</a></li>
-			{% for page in site.pages %} {% if page.title %}
-			<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-			{% endif %} {% endfor %}
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">SERVICES</a></li>
+			<li><a href="#">ABOUT</a></li>
+			<li><a href="#">SUPPORT</a></li>
+			<li><a href="#">CONTACT</a></li>
 		</ul>
 	</div>
 	</div>
 </nav>
 </div>
+	<ul class="side-nav" id="mobile-demo">
+		<a href="/" class="side-logo center-align"><img src="img/scvdata_logo.png"></a>
+		<li><a href="/">Home</a></li>
+		<li><a href="#">Services</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Support</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
 				
