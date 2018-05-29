@@ -12,7 +12,7 @@ nav {
   
   ul a {
   color: black;
-  font-size: 0.85em;
+  font-size: 0.75em;
   font-weight: 590;
   letter-spacing: 0.1em;
   }
@@ -147,6 +147,10 @@ input:focus {
   .indicator-item.active {
       background-color: $main !important;
   }
+
+  img {
+    filter: brightness(50%);
+  }
 }
 
 /* Who We Help */
@@ -187,8 +191,12 @@ input:focus {
 /* Some of our Clients */
 
 .our-clients {
-  padding-top: 3.5em;
+  padding-top: 3em;
 
+}
+
+.clients-logo {
+  margin-top: 3em;
 }
 
 /* Contact Us */
@@ -254,14 +262,14 @@ input:focus {
 /* Slider Section */
 
   .slider {
-    height: 780px !important;
+    height: 790px !important;
   
     h1 {
       font-size: 3.7em;
     }
 
     .slides {
-      height: 730px !important;
+      height: 755px !important;
     }
 
     .btn {
@@ -310,6 +318,12 @@ input:focus {
     position: absolute;
     z-index: -1;
   }
+
+  /* Some of our Clients Section */  
+  .clients-logo {
+    margin-top: 3em;
+  }
+
 }
 
 /** Desktop Devices styles go here 
